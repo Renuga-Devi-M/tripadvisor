@@ -1,0 +1,598 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: floralwhite;
+}
+
+.navbar{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    padding: 2px;
+    padding-left: 90px;
+    cursor: pointer;
+}
+
+.navbar img{
+    width: 35px;
+    height: 35px;
+    border-radius: 60px;
+}
+
+.navbar_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 200px;
+    gap: 30px;
+    font-weight: 550;
+    
+}
+
+.navbar_1 p{
+    border-radius: 30px;
+    padding: 8px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.navbar_1 p:hover{
+    background-color: rgb(190, 192, 194);
+}
+
+.navbar_2{
+    padding-left: 210px;
+}
+
+.navbar_2 p{
+    border-radius: 30px;
+    padding: 8px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.navbar_2 p:hover{
+    background-color: rgb(190, 192, 194);
+}
+
+.navbar_3{
+    padding-left: 20px;
+    
+}
+
+.navbar_3 p{
+    padding:15px 25px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border-radius: 40px;
+}
+
+.title{
+    weight:1000px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    padding-bottom: 1px;
+}
+
+.catlog{
+    padding-left: 310px;
+    padding-right: 340px;
+}
+.catlog_1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.catlog_1 p{
+    font-weight: 550;
+    font-size: 17px; 
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding: 1px;
+    position: relative;
+}
+
+.catlog_1 p:hover{
+    color: gray;
+}
+
+.catlog_1 p::before{  
+    content: '';
+    position: absolute;
+    bottom: -0px;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.catlog_1 p:hover::before{
+    width: 100%;
+}
+
+.search{
+    border-radius: 50px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 255px;
+    margin-right: 270px;
+    border: solid 1px whitesmoke;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.search input{
+    border: none;
+    font-size: 16px ;
+    width:100%;
+    margin-right: 150px;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search button{
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 17px;
+    border: none;
+    background-color: aqua;
+    color: black;
+
+}
+
+.search button:hover{
+    color: gray;
+}
+
+.sale{
+    position: relative;
+}
+
+.sale img{
+    width: 18%;
+    height: 200px;
+    padding-left: 800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.choice{
+    padding: 10px;
+    margin: 0px 100px;
+    line-height: 0.5;
+}
+
+.choice_title{
+    font-weight: 800;
+}
+
+.choice_title1{
+    font-size: 18.5px;
+}
+
+.choice_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.trip{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 20px;
+    height:  300px;
+    width: 300px;
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.trip img{
+    height: 80%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+}
+
+.trip img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.trip_offer{
+    width: 210px;
+    height: 100px; 
+    position: absolute;
+    color: aliceblue;
+    font-size: 12px;
+    bottom: 0px;
+    left: 5px;
+    animation-duration: zoom;
+    animation-duration: 2s;
+    /* opacity: 0; */
+    animation-fill-mode: forwards;
+}
+
+.trip1{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 20px;
+    height:  300px;
+    width: 300px;
+    position: relative;
+}
+
+.trip1 img{
+    height: 60%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+}
+
+.trip1 img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.trip1_offer{
+    width: 260px;
+    height: 100px; 
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    bottom: 30px;
+    left: 1px;
+    animation-duration: zoom;
+    animation-duration: 2s;
+    /* opacity: 0; */
+    animation-fill-mode: forwards;
+    line-height: 1.5;
+
+    .dot{
+        line-height: 0;
+        font-size: 11px;
+    }
+
+    .price{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 0.5;
+    }
+}
+
+.travel-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 355px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(240, 214, 205);
+}
+
+.travel-card-btn{
+    border: solid black 1px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.travel-card-btn:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+.recommended-explorer{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    background-color: rgb(240, 214, 205);
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.recommended-container-explorer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    margin: 10px 100px;
+}
+
+.trip2{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 15px;
+    height:  300px;
+    width: 300px;
+    position: relative;
+}
+
+.trip2 img{
+    height: 80%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+}
+
+.trip2 img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.trip2_offer{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.choice_title0{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.choice_title2{
+    font-size: 18.5px;
+}
+
+.recommended-Home{
+    padding: 0px;
+    margin-left:50px;
+    margin-top: 0px;
+}
+
+.recommended__title{
+    font-weight: 800;
+}
+
+.recommended__container-Home{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    margin: 10px 100px;
+}
+
+.course-card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 20px;
+    height:  300px;
+    width: 300px;
+    line-height: 0;
+}
+
+.course-card1{
+    padding-left: 9px;
+    padding-top: 0px;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 790;
+    padding-right: 20px;
+}
+
+#course-card__img-H{
+    height: 60%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px
+}
+
+.course-card img{
+    height: 90%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.course-card img:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+
+.award-container{
+    display: flex;
+    width: 100%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    background-color: #fff7e1;
+    margin-bottom: 5%;
+}
+
+.award-container__content h1{
+    font-weight: 790;
+    font-size: 33px;
+}
+
+.award-container__content p{
+    font-size: 17.5px;
+}
+
+
+.award-container__content img{
+    width: 10%;
+}
+
+.award-container__content{
+   line-height: 0.6; 
+   padding-left: 5%;   
+}
+
+.award-container__content-btn{
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 2%;
+    border-radius: 40px;
+}   
+
+.award-container__content-btn:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.award-container__img{
+    padding-left: 130px;
+}
+
+.award-container__img img{
+    width: 200px;
+    height: 300px;
+    
+}
+
+.footer{
+    padding: 30px;
+    background-color: #faf1ed;
+    color: black;
+
+}
+
+.footer__one{
+    display: flex;
+    margin: 0% 5%;
+}
+
+.footer__one p{
+    margin: 0% 3%;
+    line-height: 1.5;
+    font-weight:549;
+    font-size: 18px;
+}
+
+.footer__two{
+    margin: 10px;
+    align-items:  center;
+    display: flex;
+    justify-content: space-between;
+    font-weight:549;
+    font-size: 18px;
+}
+
+.footer__two img{
+    width: 4%;
+    border-radius: 50px;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+}
+
+
