@@ -65,6 +65,12 @@ body{
     color: white;
     font-size: 17px;
     border-radius: 40px;
+    cursor: pointer;
+}
+
+.navbar_3 p:hover{
+    color: black;
+    background-color: gray;
 }
 
 .title{
@@ -76,15 +82,15 @@ body{
     padding-bottom: 1px;
 }
 
-.catlog{
-    padding-left: 310px;
-    padding-right: 340px;
-}
 .catlog_1{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-left: 310px;
+    padding-right: 340px;
+    cursor: pointer;
 }
+
 .catlog_1 p{
     font-weight: 550;
     font-size: 17px; 
@@ -129,6 +135,10 @@ body{
     gap: 10px;
 }
 
+.search:hover{
+    box-shadow: 12px 12px 12px black, -10px -10px 10px white;
+}
+
 .search input{
     border: none;
     font-size: 16px ;
@@ -147,11 +157,12 @@ body{
     border: none;
     background-color: aqua;
     color: black;
-
+    cursor: pointer;
 }
 
 .search button:hover{
-    color: gray;
+    color: black;
+    background-color: rgb(109, 212, 212);
 }
 
 .sale{
@@ -164,6 +175,31 @@ body{
     padding-left: 800px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.sale__offer{
+    width: 20px;
+    height: 10px;
+    /* background-color: white; */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 2%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .choice{
@@ -223,6 +259,32 @@ body{
     animation-duration: 2s;
     /* opacity: 0; */
     animation-fill-mode: forwards;
+}
+
+.choice1{
+    padding: 10px;
+    margin: 0px 100px;
+    line-height: 0.5;
+}
+
+.choice_container1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.choice2{
+    padding: 10px;
+    margin: 0px 100px;
+    line-height: 0.5;
+}
+
+.choice_container2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .trip1{
@@ -431,7 +493,6 @@ body{
     font-size: 17.5px;
 }
 
-
 .award-container__content img{
     width: 10%;
 }
@@ -595,4 +656,414 @@ body{
     color: #ffffff;
 }
 
+
+
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+    .navbar img{
+        width: 9%;
+        border-radius: 50%;
+        height: 9%;
+        margin-left: 1px;
+        margin-top: 2px;
+    }
+
+    .navbar h2{
+       font-size: 40px;
+       margin-top: 32px;
+    }
+
+    .navbar_1{
+        display: none;
+    }
+
+    .navbar_2{
+        display: none;
+    }
+
+    .navbar_3{
+        display: none;
+    }
+
+    .navbar_4{
+        margin-left: 295px;
+        margin-top: 10px;
+    }
+
+    .title{
+        height: 90px;
+        align-items: center;
+    }
+
+    .search{
+        width: 50%;
+        height: 60%;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .search:hover{
+        box-shadow: 12px 12px 12px black, -10px -10px 10px white;
+    }
+    
+    .sale img{
+        width: 18%;
+        height: 180px;
+        padding-left: 450px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .choice{
+        margin-top: 20px;
+    }
+
+    .choice_container{
+        height: 620px;
+    }
+    
+    .trip, .trip_offer{
+        flex-basis: 30%;
+        margin: 1.7%;
+    }
+
+    .choice1{
+        margin-top: 20px;
+    }
+
+    .choice_container1{
+        height: 620px;
+    }
+
+    .choice2{
+        margin-top: 20px;
+    }
+
+    .choice_container2{
+        height: 620px;
+    }
+    
+    .trip2, .trip2_offer{
+        flex-grow: 1;
+        flex-basis: 20%;
+        margin: 5px;
+        height:  150px;
+        width: 159px; 
+    }  
+
+    .trip1, .trip1_offer{
+        flex-basis: 30%;
+        margin: 3%;
+    }
+    .search button{
+        display: none;
+    }
+    .catlog{
+        display: none;
+    }
+
+    .travel-card{
+        margin-top: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 100px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .travel-card-btn{
+        border: solid black 1px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 4px 10px;
+        cursor: pointer;
+        padding: 10px 10px;
+        border-radius: 30px;
+    }
+   
+    .recommended-explorer{
+        margin: 3%;
+        padding-bottom: 100px;
+    }
+
+    .recommended__container-Home{
+        padding: 1.1%;
+    }
+    
+    .course-card{
+        flex-basis: 35%;
+        margin-left: 1.1%;
+        margin-right: 1.1%;
+        margin-bottom: 1%;
+        height:  210px;
+        width: 300px;
+        line-height: 0;
+    }
+
+    .award-container__content{
+        line-height: 1.2;
+    }
+    
+    .footer__two, .footer__one p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    body{
+        font-size: 10px;
+    }
+    .navbar img{
+        width: 8%;
+        border-radius: 50%;
+        height: 8%;
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+
+    .navbar h2{
+       font-size: 30px;
+       margin-top: 26px;
+    }
+
+    .navbar_1{
+        display: none;
+    }
+
+    .navbar_2{
+        display: none;
+    }
+
+    .navbar_3{
+        display: none;
+    }
+
+    .navbar_4{
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+
+    .search{
+        width: 68%;
+        height: 60%;
+        margin-left: 100px;
+        margin-right: 120px;
+    }
+
+    .search:hover{
+        box-shadow: 12px 12px 12px black, -10px -10px 10px white;
+    }
+    
+    .sale img{
+        width: 30%;
+        height: 200px;
+        padding-left: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .choice{
+        margin-top: 20px;
+    }
+
+    .choice_container{
+        margin-top: 27px;
+        height: 620px;
+    }
+
+    .choice_title{
+        font-size: 20px;
+    }
+
+    .choice_title1{
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .trip, .trip_offer{
+        flex-basis: 47%;
+        margin: 1.7%;
+    }
+
+    .choice1{
+        margin-top: 580px;
+    }
+
+    .choice_container1{
+        margin-top: 27px;
+        height: 615px;
+        width: 370px;
+        margin-right: 10px;
+    }
+
+    .choice2{
+        margin-top: 20px;
+    }
+
+    .choice_container2{
+        margin-top: 27px;
+        height: 615px;
+        width: 370px;
+        margin-right: 10px;
+    }
+
+    .trip2{
+        flex-basis: 47%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 1.7%;
+        height: 335px;
+        width: 50px;
+    }  
+
+    .trip2_offer{
+        margin-left: 1%;
+        margin-right: 1%;
+        font-size: 15px;
+        width: 320px;
+        height: 10px; 
+        bottom: 5px;
+        left: 1px;
+        line-height: 1.5;
+    }
+
+    .trip1{
+        flex-basis: 44%;
+        margin: 3%;
+    }
+
+    .trip1_offer{
+        margin-left: 1%;
+        margin-right: 1%;
+        font-size: 14px;
+        width: 160px;
+        height: 100px; 
+        bottom: 30px;
+        left: 1px;
+        line-height: 1.5;
+
+    .dot{
+        line-height: 0;
+        font-size: 9px;
+    }
+
+    .price{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 0.5;
+    }
+    }
+
+    .search button{
+        display: none;
+    }
+    .catlog{
+        display: none;
+    }
+
+    .travel-card{
+        display: none;
+    }
+   
+    .recommended-explorer{
+        margin-top: 100%;
+        padding-bottom: 1px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .choice_title0{
+        font-size: 15px;
+    }
+
+    .choice_title2{
+        font-size: 15px;
+    }
+
+    .recommended-Home{
+        margin-top: 600px;
+    }
+
+    .recommended-title{
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .recommended__container-Home{
+        padding: 1%;
+    }
+    
+    .course-card{
+        margin-top: 0%;
+        padding-bottom: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .course-card p{
+        font-size: 14px;
+        line-height: 0;
+    }
+
+    .course-card h6{
+        font-size: 11px;
+    }
+
+    #course-card__img-H{
+       width: 87%;
+       height: 80%;
+    }
+
+    .award-container__content img{
+        width: 15%;
+    }
+
+    .award-container__content h1{
+        line-height: 1.5;
+        font-size: 22px;
+        font-weight: 900;
+    }
+
+    .award-container__content p{
+        line-height: 1.3;
+        font-size: 15px;
+    }
+
+    .award-container__img{
+        padding-left: 130px;
+    }
+    
+    .award-container__img img{
+        width: 130px;
+        height: 170px;
+        
+    }
+    
+    .footer__two, .footer__one p{
+        font-size: 15px;
+    }
+
+    .wrapper .icon {
+        width: 5px;
+        height: 5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:800px){
+    .navbar_4{
+        display: none;
+    }
+}
 
