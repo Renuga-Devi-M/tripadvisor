@@ -202,11 +202,24 @@ body{
     }
 }
 
-.choice{
+.choice0{
     padding: 10px;
     margin: 0px 100px;
     line-height: 0.5;
 }
+
+.choice3{
+    padding: 10px;
+    margin: 0px 100px;
+    line-height: 0.5;
+}
+
+.choice4{
+    padding: 10px;
+    margin: 0px 100px;
+    line-height: 0.5;
+}
+
 
 .choice_title{
     font-weight: 800;
@@ -719,9 +732,18 @@ body{
         padding-bottom: 20px;
     }
 
-    .choice{
+    .choice0{
         margin-top: 20px;
     }
+
+    .choice3{
+        margin-top: 20px;
+    }
+
+    .choice4{
+        margin-top: 20px;
+    }
+
 
     .choice_container{
         height: 620px;
@@ -825,16 +847,16 @@ body{
         font-size: 10px;
     }
     .navbar img{
-        width: 8%;
+        width: 7%;
         border-radius: 50%;
-        height: 8%;
+        height: 7%;
         margin-left: 1px;
         margin-top: 1px;
     }
 
     .navbar h2{
-       font-size: 30px;
-       margin-top: 26px;
+       font-size: 15px;
+       margin-top: 10px;
     }
 
     .navbar_1{
@@ -850,40 +872,76 @@ body{
     }
 
     .navbar_4{
-        margin-left: 150px;
-        margin-top: 10px;
+        margin-left: 50px;
+        margin-top: 7px;
+    }
+
+    .title{
+        weight:800px;
+        font-size: 22px;
+        padding-right: 85px;
+        padding-left: 50px;
+        padding-bottom: 1px;
     }
 
     .search{
-        width: 68%;
-        height: 60%;
-        margin-left: 100px;
-        margin-right: 120px;
+        width: 58%;
+        height: 10%;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 50px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .search:hover{
         box-shadow: 12px 12px 12px black, -10px -10px 10px white;
     }
+
+    .search input{
+        border: none;
+        font-size: 14px ;
+        width:100%;
+        margin-right: 50px;
+    }
+    
+    .search input:focus{
+        outline: none;
+    } 
     
     .sale img{
         width: 30%;
-        height: 200px;
-        padding-left: 300px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        height: 100px;
+        padding-left: 100px;
+        padding-top: 10px;
+        padding-bottom: 1px;
+    }
+
+    .choice0{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .choice3{
+        margin-left: 10px;
+        margin-top: 150px;
     }
 
     .choice{
-        margin-top: 20px;
+        margin-left: 10px;
+        margin-top: 150px;
     }
 
     .choice_container{
-        margin-top: 27px;
+        margin-top: 10px;
         height: 620px;
     }
 
     .choice_title{
         font-size: 20px;
+        line-height: 1;
     }
 
     .choice_title1{
@@ -897,57 +955,58 @@ body{
     }
 
     .choice1{
-        margin-top: 580px;
+        margin-left: 10px;
+        margin-top: 530px;
     }
 
     .choice_container1{
-        margin-top: 27px;
-        height: 615px;
-        width: 370px;
-        margin-right: 10px;
+        margin-top: 10px;
+        height: 620px;        
     }
 
     .choice2{
-        margin-top: 20px;
+        margin-top: 150px;
+        margin-left: 10px;
     }
 
     .choice_container2{
         margin-top: 27px;
         height: 615px;
-        width: 370px;
+        width: 250px;
         margin-right: 10px;
     }
 
     .trip2{
-        flex-basis: 47%;
-        margin-left: 8%;
-        margin-right: 8%;
-        margin-bottom: 1.7%;
-        height: 335px;
-        width: 50px;
+        flex-basis: 50%;
+        margin-left: 1px;
+        margin-right: 2.1%;
+        margin-bottom: 3%;
+        height: 280px;
+        width: 100px;
     }  
 
     .trip2_offer{
         margin-left: 1%;
-        margin-right: 1%;
-        font-size: 15px;
-        width: 320px;
+        margin-right: 8%;
+        font-size: 12px;
+        width: 150px;
         height: 10px; 
-        bottom: 5px;
+        bottom: 1px;
         left: 1px;
         line-height: 1.5;
     }
 
     .trip1{
         flex-basis: 44%;
-        margin: 3%;
+        margin-left: 3%;
+        margin-top: 65px;
     }
 
     .trip1_offer{
         margin-left: 1%;
         margin-right: 1%;
         font-size: 14px;
-        width: 160px;
+        width: 100px;
         height: 100px; 
         bottom: 30px;
         left: 1px;
@@ -961,7 +1020,7 @@ body{
     .price{
         font-weight: normal;
         font-size: 14px;
-        line-height: 0.5;
+        line-height: 1;
     }
     }
 
@@ -977,18 +1036,21 @@ body{
     }
    
     .recommended-explorer{
-        margin-top: 100%;
-        padding-bottom: 1px;
+        margin-top: 160%;
+        padding-bottom: 20px;
         margin-left: 0%;
         margin-right: 0%;
+        margin-bottom: 1px;
     }
 
     .choice_title0{
         font-size: 15px;
+        line-height: 1;
     }
 
     .choice_title2{
         font-size: 15px;
+        line-height: 1;
     }
 
     .recommended-Home{
@@ -996,42 +1058,47 @@ body{
     }
 
     .recommended-title{
-        font-size: 35px;
-        font-weight: 900;
+        font-size: 15px;
+        padding-left: 10px;
     }
 
     .recommended__container-Home{
-        padding: 1%;
+        padding: 1px;
     }
     
     .course-card{
         margin-top: 0%;
-        padding-bottom: 15px;
-        margin-left: 10%;
-        margin-right: 10%;
+        padding-bottom: 1px;
+        margin-left: 1px;
+        margin-right: 1%;
+    }
+
+    .course-card h1{
+        font-size: 15px;
     }
 
     .course-card p{
-        font-size: 14px;
-        line-height: 0;
+        font-size: 12px;
+        line-height: 1;
     }
 
     .course-card h6{
-        font-size: 11px;
+        font-size: 10px;
+        line-height: 0;
     }
 
     #course-card__img-H{
        width: 87%;
-       height: 80%;
+       height: 70%;
     }
 
     .award-container__content img{
-        width: 15%;
+        width: 20%;
     }
 
     .award-container__content h1{
-        line-height: 1.5;
-        font-size: 22px;
+        line-height: 1;
+        font-size: 20px;
         font-weight: 900;
     }
 
@@ -1041,23 +1108,27 @@ body{
     }
 
     .award-container__img{
-        padding-left: 130px;
+        padding-left: 0px;
+        padding-right: 20px;
     }
     
     .award-container__img img{
-        width: 130px;
-        height: 170px;
-        
+        width: 100px;
+        height: 130px;   
     }
     
     .footer__two, .footer__one p{
-        font-size: 15px;
+        font-size: 9px;
+    }
+
+    .footer__two img{
+        width: 4%;
     }
 
     .wrapper .icon {
-        width: 5px;
-        height: 5px;
-        font-size: 15px;
+        width: 1px;
+        height: 1px;
+        font-size: 5px;
     }
 }
 
